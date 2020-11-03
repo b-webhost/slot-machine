@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: no-repeat url("img/background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(2px) brightness(50%);
+}
+
+.machine {
+    width: 770px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+    box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.1),
+        0 0 100px rgba(251, 171, 126, 0.5);
+    border-radius: 20px;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+}
+
+.output {
+    width: 200px;
+    padding: 20px;
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.odometer {
+    font-size: 180px;
+    user-select: none;
+}
+
+.output p {
+    font-size: medium;
+}
+
+#start-button {
+    padding: 20px;
+    background-color: #fbab7e;
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.slot {
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
